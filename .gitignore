@@ -1,0 +1,13 @@
+/dist/
+/build
+/coverage/
+/node_modules/
+/playground/dist/
+/test-dist/
+
+.DS_Store
+.idea/
+.vscode/
+yarn-error.log
+.env
+local.log
