@@ -1,26 +1,26 @@
 {
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es5",
+    "removeComments": false,
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "noErrorTruncation": true,
+    "declaration": false,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "sandbox/dist"
+  ],
+  "ts-node": {
     "compilerOptions": {
-      "module": "esnext",
-      "moduleResolution": "node",
-      "target": "es5",
-      "removeComments": false,
-      "resolveJsonModule": true,
-      "importHelpers": true,
-      "noErrorTruncation": true,
-      "declaration": false,
-      "strict": true,
-      "noUnusedLocals": true,
-      "noUnusedParameters": true,
-      "allowSyntheticDefaultImports": true
-    },
-    "exclude": [
-      "dist",
-      "node_modules",
-      "sandbox/dist"
-    ],
-    "ts-node": {
-      "compilerOptions": {
-        "module": "commonjs"
-      }
+      "module": "commonjs"
     }
   }
+}
