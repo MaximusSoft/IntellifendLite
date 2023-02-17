@@ -24,12 +24,12 @@ export const enum BotRuntime {
  * @enum {int}
  */
 export const enum Anomaly {
-  EmptyPlugins,
-  NoFunctionBind,
-  HeadlessUserAgent,
-  ElectronUserAgent,
-  SlimerjsUserAgent,
-  MimeTypesInconsistent,
+  EmptyPlugins = 'empty_plugins',
+  NoFunctionBind = 'no_function_bind',
+  HeadlessUserAgent = 'headless_user_agent',
+  ElectronUserAgent = 'electron_user_agent',
+  SlimerjsUserAgent = 'slimerjs_user_agent',
+  MimeTypesInconsistent = 'mime_types_inconsistent',
 }
 
 export const enum BrowserCore {

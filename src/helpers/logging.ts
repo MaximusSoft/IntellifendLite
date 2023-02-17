@@ -1,5 +1,13 @@
 import { LoggerInterface } from "../types";
 
+function replacer(_: any, value: any) {
+    if(value instanceof Map) {
+      return Array.from(value.entries()).flat()
+    } else {
+      return value;
+    }
+  }
+
 export class JsonLogger implements LoggerInterface {
     tree: Map<string, Map<string, string[]>> = new Map<string, Map<string, string[]>>()
     trace(botLabel: string, checkLabel: string, message: string) {
@@ -10,6 +18,6 @@ export class JsonLogger implements LoggerInterface {
         messages.push(message)
     }
     read(): string {
-        return JSON.stringify(this.tree)
+        return JSON.stringify(this.tree, replacer, 4)
     }
 }

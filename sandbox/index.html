@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>IntellifendLite Sandbox</title>
+  </head>
+  <body>
+    <div class="content">
+      <a class="logo_ref" href="https://maximussoft.com/">
+        <img class="logo" src="fp_logo_orange_blue.svg" alt="" />
+      </a>
+      <h1>IntellifendLite Sandbox</h1>
+      <h2 id="status">Loading...</h2>
+      <form class="buttons-container">
+        <button class="button" id="evaluate-button" type="button">Start evaluate</button>
+        <button class="button" id="copy-trace-button" type="button">Copy trace</button>
+      </form>
+      <div class="output_holder">
+        <section id="result_section" class="output">
+          <h5>Time spent:</h5>
+          <pre class="output_div" id="time-spent"></pre>
+          <h5>Evaluation result:</h5>
+          <pre class="output_div" id="evaluation"></pre>
+          <h5>Debug data:</h5>
+          <pre class="output_div" id="debug-data"></pre>
+          <h5>Trace data:</h5>
+          <pre class="output_div" id="trace-data"></pre>
+        </section>
+        <section id="error_section" class="output">
+          <h5>Error:</h5>
+          <pre class="output_div" id="error"></pre>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

@@ -31,25 +31,6 @@ export interface LoggerInterface {
     read(): string
 }
 
-
-// type CheckerHandler = (tracer: Tracer) => Boolean;
-
-// export class Checker {
-//     anomaly: Anomaly;
-//     handler: CheckerHandler;
-//     constructor(anomaly: Anomaly, handler: CheckerHandler) {
-//         this.anomaly = anomaly
-//         this.handler = handler
-//     }
-//     check(tracer: Tracer) {
-//         try {
-//             return this.handler(tracer)
-//         } catch {
-//             return
-//         }
-//     }
-// }
-
 export class IntellifendError extends Error {
 
 }

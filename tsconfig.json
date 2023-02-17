@@ -3,6 +3,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "target": "es5",
+    "sourceMap": true,
     "removeComments": false,
     "resolveJsonModule": true,
     "importHelpers": true,

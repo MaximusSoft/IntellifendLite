@@ -2,7 +2,7 @@
 /build
 /coverage/
 /node_modules/
-/playground/dist/
+/sandbox/dist/
 /test-dist/
 
 .DS_Store

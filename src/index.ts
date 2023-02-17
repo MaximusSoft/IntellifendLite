@@ -1,6 +1,5 @@
-import { version } from '../package.json'
+import packageInfo from '../package.json'
 import BotEvaluator from './evaluator'
-import { EvaluationResult } from './types'
 
 /**
  * Options for IntellifentLite loading
@@ -18,7 +17,7 @@ export interface LoadOptions {
 function report() {
     try {
         const request = new XMLHttpRequest()
-        request.open('get', `https://cdn.intellifend.com/lite/install-monitoring?v=${version}`, true)
+        request.open('get', `https://cdn.intellifend.com/lite/install-monitoring?v=${packageInfo.version}`, true)
         request.send()
     } catch (error) {
         // eslint-disable-next-line no-console
@@ -26,12 +25,12 @@ function report() {
     }
 }
 
-export async function load({ reporting = false }: Readonly<LoadOptions> = {}): Promise<EvaluationResult> {
+export async function load({ reporting = false }: Readonly<LoadOptions> = {}): Promise<BotEvaluator> {
     if (reporting) {
         report()
     }
     const evaluator = new BotEvaluator()
-    return await evaluator.evaluate()
+    return evaluator
 }
 
 export default { load }

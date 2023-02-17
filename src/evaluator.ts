@@ -22,11 +22,13 @@ export default class BotEvaluator implements BotEvaluatorInterface {
           violated: checker.handler(checkerArguments),
           anomaly: checker.anomaly,
         })
-      } catch {
-
+      } catch(e) {
+        console.error(e)
       }
     }
-    const botRuntimes: BotRuntime[] = checkResults.map(v => runtimeOfAnomaly(v.anomaly))
+    const botRuntimes: BotRuntime[] = checkResults
+      .filter(v => v.violated)
+      .map(v => runtimeOfAnomaly(v.anomaly))
       .reduce((uniques: BotRuntime[], current: BotRuntime) => {
         if (!includes(uniques, current)) {
           uniques.push(current);
