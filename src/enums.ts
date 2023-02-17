@@ -5,7 +5,7 @@
  * @enum {string}
  */
 export const enum BotRuntime {
-  Unknown = 'unknown',
+  Uncategorized = 'uncategorized',
   HeadlessChrome = 'headless_chrome',
   PhantomJS = 'phantomjs',
   Nightmare = 'nightmare',
@@ -26,28 +26,11 @@ export const enum BotRuntime {
 export const enum Anomaly {
   EmptyPlugins,
   NoFunctionBind,
+  HeadlessUserAgent,
+  ElectronUserAgent,
+  SlimerjsUserAgent,
+  MimeTypesInconsistent,
 }
-
-// export type DetectionResponse = boolean | BotType | undefined
-
-// /**
-//  * Bot detection error.
-//  */
-// export class DetectionError extends Error {
-//   state: Exclude<State, State.Success>
-
-//   /**
-//    * Creates a new DetectionError.
-//    *
-//    * @class
-//    */
-//   constructor(state: Exclude<State, State.Success>, message: string) {
-//     super(message)
-//     this.state = state
-//     this.name = 'DetectionError'
-//     Object.setPrototypeOf(this, DetectionError.prototype)
-//   }
-// }
 
 export const enum BrowserCore {
   Unknown = 'unknown',
