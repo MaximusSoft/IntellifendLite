@@ -41,6 +41,7 @@ export default class BotEvaluator implements BotEvaluatorInterface {
     return {
       checks: checkResults,
       bots: botRuntimes,
+      isBot: botRuntimes.length > 0,
       trace,
     }
   }

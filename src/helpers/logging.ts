@@ -2,7 +2,7 @@ import { LoggerInterface } from "../types";
 
 function replacer(_: any, value: any) {
     if(value instanceof Map) {
-      return Array.from(value.entries()).flat()
+      return Object.fromEntries(Array.from(value.entries()))
     } else {
       return value;
     }

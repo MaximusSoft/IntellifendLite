@@ -44,9 +44,9 @@ const main = async () => {
         timeElement!.textContent = timeSpent
 
         evaluationElement!.textContent = JSON.stringify({ 
-            "is bot?": evaluationResult.bots.length > 0,
-            "bot categories": evaluationResult.bots,
-            "bot violations": evaluationResult.checks,
+            "isBot": evaluationResult.isBot,
+            "botCategories": evaluationResult.bots,
+            "botAnomalies": evaluationResult.checks,
         }, null, 4)
 
         const debugData = {

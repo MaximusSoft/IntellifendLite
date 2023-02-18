@@ -11,6 +11,7 @@ export type EvaluationResult = {
     trace: string,
     checks: CheckResult[],
     bots: BotRuntime[],
+    isBot: Boolean,
 }
 
 export type Tracer = Array<Trace>
