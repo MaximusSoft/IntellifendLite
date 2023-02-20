@@ -116,3 +116,16 @@ export function getDocumentFocus(): boolean {
   }
   return document.hasFocus()
 }
+
+export function isChromium86OrNewer(): boolean {
+  const w = window
+
+  return (
+    countTruthy([
+      !('MediaSettingsRange' in w),
+      'RTCEncodedAudioFrame' in w,
+      '' + w.Intl === '[object Intl]',
+      '' + w.Reflect === '[object Reflect]',
+    ]) >= 3
+  )
+}

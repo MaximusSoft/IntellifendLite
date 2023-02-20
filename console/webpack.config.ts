@@ -11,7 +11,7 @@ const config: Configuration = {
   target: 'web',
   devtool: 'inline-source-map',
 
-  entry: './sandbox/index.ts',
+  entry: './console/index.ts',
 
   output: {
     path: resolve(__dirname, 'dist'),
@@ -35,7 +35,7 @@ const config: Configuration = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: `sandbox/index.html`,
+      template: `console/index.html`,
     }),
     new CopyWebpackPlugin({
       patterns: [{ from: 'assets' }],

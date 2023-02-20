@@ -19,7 +19,7 @@ export default class BotEvaluator implements BotEvaluatorInterface {
     for (const checker of this.getCheckers()) {
       try {
         checkResults.push({
-          violated: checker.handler(checkerArguments),
+          violated: await checker.handler(checkerArguments),
           anomaly: checker.anomaly,
         })
       } catch(e) {

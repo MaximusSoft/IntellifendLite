@@ -17,7 +17,7 @@
   "exclude": [
     "dist",
     "node_modules",
-    "sandbox/dist"
+    "console/dist"
   ],
   "ts-node": {
     "compilerOptions": {

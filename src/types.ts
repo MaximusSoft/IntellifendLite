@@ -24,7 +24,7 @@ export type CheckerArguments = {
 
 export type Checker = {
     anomaly: Anomaly,
-    handler: (_: CheckerArguments) => Boolean,
+    handler: (_: CheckerArguments) => Promise<Boolean>,
 }
 
 export interface LoggerInterface {

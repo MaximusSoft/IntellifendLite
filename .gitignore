@@ -2,7 +2,7 @@
 /build
 /coverage/
 /node_modules/
-/sandbox/dist/
+/console/dist/
 /test-dist/
 
 .DS_Store

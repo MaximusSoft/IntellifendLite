@@ -60,7 +60,7 @@ const main = async () => {
 
         debugDataElement!.textContent = JSON.stringify(debugData, null, 4)
         traceDataElement!.textContent = evaluationResult.trace
-        statusElement!.textContent = 'Result:'
+        statusElement!.innerHTML = 'Result: ' + (evaluationResult.isBot ? "<span class='red'>Bot detected</span>" : "<span class='green'>Normal</span>")
     } catch (e) {
         console.error(e)
         resultsSectionElement!.style.display = 'none'
