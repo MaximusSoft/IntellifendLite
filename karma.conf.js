@@ -42,7 +42,6 @@ function setupLocal(config) {
     config.set({
         frameworks: ['jasmine', 'karma-typescript'],
         files: [
-            // The polyfills are required for old supported browsers.
             'node_modules/promise-polyfill/dist/polyfill.js',
 
             'src/**/*.ts',
