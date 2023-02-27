@@ -43,7 +43,6 @@ function setupLocal(config) {
         frameworks: ['jasmine', 'karma-typescript'],
         files: [
             'node_modules/promise-polyfill/dist/polyfill.js',
-
             'src/**/*.ts',
             'tests/**/*.ts',
             'test-dist/intellifendlite.min.js',
@@ -52,7 +51,15 @@ function setupLocal(config) {
             '**/*.ts': 'karma-typescript',
         },
         reporters: ['spec', 'summary'],
-        browsers: ['ChromeHeadless', 'FirefoxHeadless'],
+        browsers: ['ChromeHeadless', 'Firefox'],
+        // customLaunchers: {
+        //     'FirefoxHeadless': {
+        //         base: 'Firefox',
+        //         flags: [
+        //         '-headless',
+        //         ],
+        //     }
+        // },
         concurrency: 2,
 
         karmaTypescriptConfig: {
@@ -97,8 +104,10 @@ function setupBrowserstack(config) {
 
         browserStack: {
             project: 'IntellifendLite',
+            username: '',
+            accessKey: '',
             build: process.env.GITHUB_RUN_ID || makeBuildNumber(),
-            timeout: 120,
+            timeout: 150,
         },
     })
 }
