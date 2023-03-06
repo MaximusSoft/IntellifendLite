@@ -56,7 +56,7 @@ jobs:
       - name: Check the ability to work with server side rendering
         run: yarn check:ssr
 
-      - name: Build playground
+      - name: Build console
         run: yarn build:console
 
       - name: Build test bundle
