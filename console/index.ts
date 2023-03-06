@@ -72,7 +72,7 @@ const main = async () => {
     resultsSectionElement!.style.display = 'none'
     errorSectionElement!.style.display = 'block'
     statusElement!.textContent = 'Error!'
-    errorElement!.textContent = JSON.stringify(e, null, 4)
+    errorElement!.textContent = JSON.stringify(e, Object.getOwnPropertyNames(e), 4)
   }
 }
 
