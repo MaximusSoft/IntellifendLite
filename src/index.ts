@@ -2,7 +2,7 @@ import packageInfo from '../package.json'
 import BotEvaluator from './evaluator'
 
 /**
- * Options for IntellifentLite loading
+ * Options for IntellifendLite loading
  */
 export interface LoadOptions {
   /**

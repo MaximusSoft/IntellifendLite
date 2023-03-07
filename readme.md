@@ -11,7 +11,7 @@
    <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/:license-mit-blue.svg?style=flat"/>
   </a>
-  <a href="https://www.browserstack.com/screenshots/42e77ccc88f91c3b0ba9c5b59fb85e5fbbf6e054">
+  <a href="https://www.browserstack.com/screenshots/6b02c907027e2776e3d68fd2a3a07e3ba21f8ced">
     <img src="https://img.shields.io/badge/browserstack-tested-brightgreen" alt="Tested on BrowserStack">
   </a>
   <a href="#">
