@@ -1,0 +1,2 @@
+IntellifendLite v<%= pkg.version %> - Copyright (c) MaximusSoft, Inc, <%= new Date().getFullYear() %> (https://intellifend.com)
+Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
